@@ -1,0 +1,56 @@
+DROP TABLE IF EXISTS password;
+
+CREATE TABLE password (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  password TEXT NOT NULL
+);
+INSERT INTO password (password) VALUES ('123456');
+INSERT INTO password (password) VALUES ('123456789');
+INSERT INTO password (password) VALUES ('12345');
+INSERT INTO password (password) VALUES ('qwerty');
+INSERT INTO password (password) VALUES ('password');
+INSERT INTO password (password) VALUES ('12345678');
+INSERT INTO password (password) VALUES ('111111');
+INSERT INTO password (password) VALUES ('123123');
+INSERT INTO password (password) VALUES ('1234567890');
+INSERT INTO password (password) VALUES ('1234567');
+INSERT INTO password (password) VALUES ('qwerty123');
+INSERT INTO password (password) VALUES ('000000');
+INSERT INTO password (password) VALUES ('1q2w3e');
+INSERT INTO password (password) VALUES ('aa12345678');
+INSERT INTO password (password) VALUES ('abc123');
+INSERT INTO password (password) VALUES ('password1');
+INSERT INTO password (password) VALUES ('1234');
+INSERT INTO password (password) VALUES ('qwertyuiop');
+INSERT INTO password (password) VALUES ('123321');
+INSERT INTO password (password) VALUES ('password123');
+INSERT INTO password (password) VALUES ('1q2w3e4r5t');
+INSERT INTO password (password) VALUES ('iloveyou');
+INSERT INTO password (password) VALUES ('654321');
+INSERT INTO password (password) VALUES ('666666');
+INSERT INTO password (password) VALUES ('987654321');
+INSERT INTO password (password) VALUES ('123');
+INSERT INTO password (password) VALUES ('123456a');
+INSERT INTO password (password) VALUES ('qwe123');
+INSERT INTO password (password) VALUES ('1q2w3e4r');
+INSERT INTO password (password) VALUES ('7777777');
+INSERT INTO password (password) VALUES ('1qaz2wsx');
+INSERT INTO password (password) VALUES ('123qwe');
+INSERT INTO password (password) VALUES ('zxcvbnm');
+INSERT INTO password (password) VALUES ('121212');
+INSERT INTO password (password) VALUES ('asdasd');
+INSERT INTO password (password) VALUES ('a123456');
+INSERT INTO password (password) VALUES ('555555');
+INSERT INTO password (password) VALUES ('dragon');
+INSERT INTO password (password) VALUES ('112233');
+INSERT INTO password (password) VALUES ('123123123');
+INSERT INTO password (password) VALUES ('monkey');
+INSERT INTO password (password) VALUES ('11111111');
+INSERT INTO password (password) VALUES ('qazwsx');
+INSERT INTO password (password) VALUES ('159753');
+INSERT INTO password (password) VALUES ('asdfghjkl');
+INSERT INTO password (password) VALUES ('222222');
+INSERT INTO password (password) VALUES ('1234qwer');
+INSERT INTO password (password) VALUES ('qwerty1');
+INSERT INTO password (password) VALUES ('123654');
+INSERT INTO password (password) VALUES ('123abc');
