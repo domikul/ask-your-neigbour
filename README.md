@@ -8,12 +8,13 @@ Przykład działania aplikacji:
 ![alt text](https://i.ibb.co/TTTdC7c/1.png)
 ![alt text](https://i.ibb.co/pZTFt26/2.png)
 
+
 # Stack technologiczny:
 
-Backend: Spring Boot + Java 
-Frontend: Angular 
-Skrypt sprawdzający hasła: Python
-Baza danych: H2 (open source)
+1. Backend: Spring Boot + Java 
+2. Frontend: Angular 
+3. Skrypt sprawdzający hasła: Python
+4. Baza danych: H2 (open source)
 
 # Sposób uruchomienia - backend
 
