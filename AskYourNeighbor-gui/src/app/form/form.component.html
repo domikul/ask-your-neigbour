@@ -1,0 +1,124 @@
+<form #tdForm="ngForm" >
+  <div id="row">
+    <div id="personalDataInfo">
+      <mat-form-field [hideRequiredMarker]="true">
+        <mat-label>Nazwa zgłaszającego</mat-label>
+        <input matInput
+               placeholder="Nazwa zgłaszającego"
+               name="nameOfApplicant"
+               [(ngModel)]="form.nameOfApplicant" required>
+      </mat-form-field>
+
+      <mat-form-field [hideRequiredMarker]="true">
+        <mat-label>Miasto</mat-label>
+        <input matInput
+               placeholder="Miasto"
+               name="city"
+               [(ngModel)]="form.city" required>
+      </mat-form-field>
+
+      <mat-form-field [hideRequiredMarker]="true">
+        <mat-label>Ulica</mat-label>
+        <input matInput
+               placeholder="Ulica"
+               name="street"
+               [(ngModel)]="form.street" required>
+      </mat-form-field>
+
+      <mat-form-field [hideRequiredMarker]="true">
+        <mat-label>Numer domu</mat-label>
+        <input matInput
+               placeholder="Numer domu"
+               name="number"
+               [(ngModel)]="form.number" required>
+      </mat-form-field>
+
+      <mat-form-field [hideRequiredMarker]="true">
+        <mat-label>Numer telefonu</mat-label>
+        <input matInput
+               placeholder="Numer telefonu"
+               name="phoneNumber"
+               [(ngModel)]="form.phoneNumber" required>
+      </mat-form-field>
+    </div>
+
+    <div id="productInfo">
+      <mat-form-field [hideRequiredMarker]="true">
+        <mat-label>Nazwa produktu</mat-label>
+        <input matInput
+               placeholder="Nazwa produktu"
+               name="productName"
+               [(ngModel)]="form.productName" required>
+      </mat-form-field>
+
+      <mat-form-field [hideRequiredMarker]="true">
+        <mat-label>Opis produktu</mat-label>
+        <input matInput
+               placeholder="Opis produktu"
+               name="description"
+               [(ngModel)]="form.description" required>
+      </mat-form-field>
+
+      <mat-form-field [hideRequiredMarker]="true" >
+        <mat-label>Kategoria</mat-label>
+        <mat-select [(value)]="form.idCategory" required #categorySelect>
+
+          <mat-option *ngFor="let category of this.categories"
+                      [value]="category.id">
+            {{category.name}}
+          </mat-option>
+
+        </mat-select>
+      </mat-form-field>
+
+      <div id="shortFields" fxLayout="row">
+        <div class="column">
+          <mat-form-field class="smallLabel" [hideRequiredMarker]="true">
+            <mat-label>Ilość</mat-label>
+            <input type="number" matInput
+                   name="amount"
+                   [(ngModel)]="form.amount" required>
+          </mat-form-field>
+        </div>
+
+        <div class="column">
+          <mat-form-field class="smallLabel" [hideRequiredMarker]="true" >
+            <mat-label>Jednostka</mat-label>
+            <mat-select [(value)]="form.idUnit" required #unitSelect>
+
+              <mat-option *ngFor="let unit of this.units"
+                          [value]="unit.id">
+                {{unit.name}}
+              </mat-option>
+
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="column">
+          <mat-form-field class="smallLabel" [hideRequiredMarker]="true">
+            <mat-label>Cena PLN</mat-label>
+          <input matInput
+                 placeholder="Cena PLN"
+                 name="price"
+                 [(ngModel)]="form.price" required>
+        </mat-form-field>
+        </div>
+
+      </div>
+
+
+      <mat-form-field [hideRequiredMarker]="true">
+        <mat-label>Termin ważności oferty</mat-label>
+        <input type="date" matInput
+               name="availabilityEnd"
+               [(ngModel)]="form.availabilityEnd" required>
+      </mat-form-field>
+
+    </div>
+
+  </div>
+
+  <button mat-raised-button color="primary" [disabled]="!tdForm.valid" (click)="submit() ; openInfoDialog() ; tdForm.resetForm({})" >Prześlij zgłoszenie</button>
+
+</form>

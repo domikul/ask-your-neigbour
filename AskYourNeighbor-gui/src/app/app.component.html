@@ -1,0 +1,14 @@
+<mat-toolbar fxLayout="row">
+  <p fxHide.lt-md="true" fxFlex="140" fxLayoutAlign="start">
+    <mat-icon>accessibility_new</mat-icon>
+    <mat-icon>local_florist</mat-icon>
+      Zapytaj sąsiada</p>
+  <button mat-button class="registerButton" routerLink="/rejestracja">Rejestracja</button>
+</mat-toolbar>
+
+<div class="buttonContainer">
+  <button mat-button routerLink="/mapa">Mapa</button>
+  <button mat-button routerLink="/formularz">Formularz zgłoszeniowy</button>
+</div>
+
+<router-outlet></router-outlet>

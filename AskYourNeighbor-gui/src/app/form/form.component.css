@@ -1,0 +1,48 @@
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#personalDataInfo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 40%;
+  margin-left: 5%;
+  float: left;
+  margin-top: 5%;
+}
+
+#productInfo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 40%;
+  margin-left: 5%;
+  float: left;
+  margin-top: 5%;
+}
+
+#shortFields {
+  width: 25%;
+}
+
+.smallLabel {
+  width: 160px;
+}
+
+.column {
+  display: inline-block !important;
+  padding-left: 5%;
+  padding-right: 15%;
+}
+
+
+button{
+  position: absolute;
+  top: 85%;
+  right: 45%;
+  width: 300px;
+  height: 50px;
+}

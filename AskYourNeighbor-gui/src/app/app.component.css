@@ -1,0 +1,29 @@
+mat-toolbar{
+  position: sticky;
+  height: 6% !important;
+}
+
+p{
+  margin-top: 5px;
+  font-size: 20pt;
+  font-family: 'Sen', sans-serif;
+  color: rgb(20, 75, 141);
+}
+
+.buttonContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  width: 50% !important;
+  background-color: rgb(224, 224, 224);
+  color: rgb(120, 144, 156);
+  border-radius:0px
+}
+
+.registerButton {
+  max-width: 150px;
+}
