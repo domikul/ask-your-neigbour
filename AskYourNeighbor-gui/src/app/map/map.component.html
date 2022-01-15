@@ -1,0 +1,16 @@
+<google-map
+  height="90%"
+  width="75%"
+  [zoom]="zoom"
+  [center]="center">
+  <map-marker
+    id="marker"
+    *ngFor="let marker of markers"
+    [position]="marker.position"
+  (mapClick)="onMarkerClick($event)">
+  </map-marker>
+</google-map>
+
+<mat-card>
+  <app-marker-info [receivedStats]="statsToSend"></app-marker-info>
+</mat-card>

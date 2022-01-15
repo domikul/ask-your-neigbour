@@ -1,0 +1,20 @@
+<div *ngIf="(receivedStats | async) as info; else welcomeScreen" class="dataContainer">
+
+  <h1>{{info.nameOfApplicant}}</h1>
+  <br>
+  <h4>{{info.description}}</h4>
+  <br>
+  <br>
+  <h3>{{"ilość: " + info.amount + " " + this.units[info.idUnit - 1].name}}</h3>
+  <h3>{{"cena: " + info.price + " PLN"}}</h3>
+  <h3>{{"dostępność oferty: " + info.availabilityEnd}}</h3>
+  <br>
+  <br>
+  <mat-icon [inline]="true" class="column" id="pinIcon">place</mat-icon>
+    <span>{{info.street + " " + info.number + ", " + info.city}}</span>
+
+</div>
+<ng-template #welcomeScreen>
+  <h1>Witaj w appce!</h1>
+  <h4>Kliknij na pinezkę aby zobaczyć produkty w danej lokalizacji.</h4>
+</ng-template>

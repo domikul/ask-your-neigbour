@@ -1,0 +1,36 @@
+<div class="container">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Rejestracja</mat-card-title>
+    </mat-card-header>
+
+    <form #tdForm="ngForm" >
+      <div id="row">
+        <div id="personalDataInfo">
+          <mat-form-field [hideRequiredMarker]="true">
+            <input matInput
+                   placeholder="Login"
+                   name="username"
+                   [(ngModel)]="adminAccount.username" required>
+          </mat-form-field>
+
+          <br>
+
+          <mat-form-field [hideRequiredMarker]="true">
+            <input matInput
+                   placeholder="Hasło"
+                   name="password"
+                   [(ngModel)]="adminAccount.password" required>
+          </mat-form-field>
+
+
+        </div>
+
+      </div>
+
+      <button mat-raised-button color="accent" [disabled]="!tdForm.valid" (click)="submit(); tdForm.resetForm({})" >Prześlij zgłoszenie</button>
+
+    </form>
+
+  </mat-card>
+</div>
