@@ -5,8 +5,8 @@ Do aplikacji dołączony został formularz rejestracji, który sprawdza czy wpro
 
 Przykład działania aplikacji: 
 
-![alt text](https://ibb.co/X44MwKX)
-![alt text](https://ibb.co/ct9nGJK)
+![alt text](https://i.ibb.co/TTTdC7c/1.png)
+![alt text](https://i.ibb.co/pZTFt26/2.png)
 
 # Stack technologiczny:
 
